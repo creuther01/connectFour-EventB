@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="machine2"/>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="PlayerTurn"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="BoardGame"/>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="Win ≔ FALSE" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Reset">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Reset"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="Win ≔ FALSE" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="NextPlayerTurn">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="NextPlayerTurn"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun1">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DropPawnColmun2">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun2"/>
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="x"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="y"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="x = 2"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="y ∈ (1‥6) ∧ BoardGame(x ↦ y) = 0"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="BoardGame(x↦y) ≔ PlayerTurn" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun3">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun4">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun5">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun6">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun6"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DropPawnColmun7">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DropPawnColmun7"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="7" org.eventb.core.identifier="Win"/>
+    <org.eventb.core.invariant name="8" org.eventb.core.label="inv1" org.eventb.core.predicate="Win ∈ BOOL"/>
+    <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CheckPlayerWin">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="Win :∣ Win' ∈ BOOL ∧ ((∃x · x ∈ (1‥7) ∧&#13;&#10;                &#9;&#9;(∃y · y ∈ (1‥3) ∧ &#13;&#10;                    &#9;&#9;BoardGame(x ↦ y) = PlayerTurn ∧ &#13;&#10;                    &#9;&#9;BoardGame(x ↦ (y + 1)) = PlayerTurn ∧ &#13;&#10;                    &#9;&#9;BoardGame(x ↦ (y + 2)) = PlayerTurn ∧ &#13;&#10;                    &#9;&#9;BoardGame(x ↦ (y + 3)) = PlayerTurn)&#13;&#10;              &#9;&#9;&#9;&#9;⇒ Win' = TRUE) &#13;&#10;              &#9;&#9;∧ &#13;&#10;              &#9;&#9;(¬(∃x · x ∈ (1‥7) ∧ &#13;&#10;            (∃y · y ∈ (1‥3) ∧ &#13;&#10;                BoardGame(x ↦ y) = PlayerTurn ∧ &#13;&#10;                BoardGame(x ↦ (y + 1)) = PlayerTurn ∧ &#13;&#10;                BoardGame(x ↦ (y + 2)) = PlayerTurn ∧ &#13;&#10;                BoardGame(x ↦ (y + 3)) = PlayerTurn)) &#13;&#10;        ⇒ Win' = FALSE))&#13;&#10;                &#9;" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

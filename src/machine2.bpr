@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps=""/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{i⦂ℤ,j⦂ℤ·i∈1 ‥ 7∧j∈1 ‥ 6 ∣ i ↦ j ↦ 0}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="Reset/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ProB (no enumeration / all cases checked)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2"/>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{i⦂ℤ,j⦂ℤ·i∈1 ‥ 7∧j∈1 ‥ 6 ∣ i ↦ j ↦ 0}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="de.prob.eventb.disprover.core.disproverReasoner"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun1/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=1" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="1 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="x=1"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun2/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=2" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="2 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="x=2"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun3/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=3" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="x=3"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="3 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun4/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=4" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="4 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="x=4"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun5/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=5" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="5 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="x=5"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun6/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=6" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p2,p3,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p3"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="x=6"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="6 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun7/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p4">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=7" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p2,p3,p4">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p3"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="x=7"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="7 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun1/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=1" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1,p2,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(1 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x=1"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{1 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="1 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun2/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=2" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1,p2,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x=2"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="2 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(2 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{2 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun3/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1,p2,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{3 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(3 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x=3"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="3 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun4/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1,p2,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="4 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x=4"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{4 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(4 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun5/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=5" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1,p2,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="5 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="x=5"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(5 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{5 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun6/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=6" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p1"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2,p3,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="x=6"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(6 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="6 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{6 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DropPawnColmun7/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="p6" org.eventb.core.prInfHyps="p8"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with x=7" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p7,p9"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p1"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2,p3,p6,p7,p9,p10,p11,p12">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.prIdent name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="x" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="x=7"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PlayerTurn∈{1,2}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="x ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="BoardGame{x ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="BoardGame{7 ↦ y ↦ PlayerTurn}∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="BoardGame(x ↦ y)=0"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="7 ↦ y∈dom(BoardGame)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="y∈1 ‥ 6⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="BoardGame(7 ↦ y)=0"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="y∈1 ‥ 6"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eqL1:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

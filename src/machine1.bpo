@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PlayerTurn" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTuro"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTuro" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTuro" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTPlayerTuro" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="Reset/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTurp"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#*"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#Reset\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurp" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurp" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurp" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="NextPlayerTurn/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTurq">
+            <org.eventb.core.poPredicate name="'" org.eventb.core.predicate="PlayerTurn'∈{1,2}∧(PlayerTurn=1⇒PlayerTurn'=2)∧(PlayerTurn=2⇒PlayerTurn'=1)" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+|org.eventb.core.action#'"/>
+        </org.eventb.core.poPredicateSet>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="PlayerTurn'∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poSequent#NextPlayerTurn\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="NextPlayerTurn/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTurq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃PlayerTurn'⦂ℤ·PlayerTurn'∈{1,2}∧(PlayerTurn=1⇒PlayerTurn'=2)∧(PlayerTurn=2⇒PlayerTurn'=1)" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTurq"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurq" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurq" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurq" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PlayerTurn∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/src/machine1.bpo|org.eventb.core.poFile#machine1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PlayerTurn∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

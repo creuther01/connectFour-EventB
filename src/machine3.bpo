@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="21">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="PlayerTurn" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Win" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poPredicate name="PlayerTuro" org.eventb.core.predicate="PlayerTurn∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="PlayerTurp" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → {0,1,2}" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.invariant#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTuro" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="Win'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTuro" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTuro" org.eventb.core.poStamp="8"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurp" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="Win'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurp" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurp" org.eventb.core.poStamp="8"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurq" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="PlayerTurn'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurq" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurq" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="PlayerTurn∈{1,2}" org.eventb.core.source="/src/machine1.bum|org.eventb.core.machineFile#machine1|org.eventb.core.event#+|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurr" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurr" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurr" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=1" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#.|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#.|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurs" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurs" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurs" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=2" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#1|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurt" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurt" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurt" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=3" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#0|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTuru" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTuru" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTuru" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=4" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#1|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#1|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurv" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurv" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurv" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=5" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#2|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurw" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurw" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurw" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=6" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#3|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#3|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTurx" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poIdentifier name="y" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="x" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTurx" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTurx" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="x=7" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="y∈1 ‥ 6∧BoardGame(x ↦ y)=0" org.eventb.core.source="/src/machine2.bum|org.eventb.core.machineFile#machine2|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="CheckPlayerWin/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="21">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTury"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀Win'⦂BOOL·Win'∈BOOL⇒(∀x⦂ℤ·x∈1 ‥ 7⇒(∀y⦂ℤ·y∈1 ‥ 3⇒x ↦ y∈dom(BoardGame)∧BoardGame∈ℤ × ℤ ⇸ ℤ∧(BoardGame(x ↦ y)=PlayerTurn⇒x ↦ y+1∈dom(BoardGame)∧(BoardGame(x ↦ y+1)=PlayerTurn⇒x ↦ y+2∈dom(BoardGame)∧(BoardGame(x ↦ y+2)=PlayerTurn⇒x ↦ y+3∈dom(BoardGame))))))" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#9|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#9|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTury"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="CheckPlayerWin/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="21">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTury"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃Win'⦂BOOL·Win'∈BOOL∧(∃x⦂ℤ·x∈1 ‥ 7∧(∃y⦂ℤ·y∈1 ‥ 3∧BoardGame(x ↦ y)=PlayerTurn∧BoardGame(x ↦ y+1)=PlayerTurn∧BoardGame(x ↦ y+2)=PlayerTurn∧BoardGame(x ↦ y+3)=PlayerTurn)⇒Win'=TRUE)∧(¬(∃x⦂ℤ·x∈1 ‥ 7∧(∃y⦂ℤ·y∈1 ‥ 3∧BoardGame(x ↦ y)=PlayerTurn∧BoardGame(x ↦ y+1)=PlayerTurn∧BoardGame(x ↦ y+2)=PlayerTurn∧BoardGame(x ↦ y+3)=PlayerTurn))⇒Win'=FALSE)" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#9|org.eventb.core.action#'"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.event#9|org.eventb.core.action#'"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTALLHYPPlayerTury"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTPlayerTury" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Win'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPPlayerTury" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#EVTIDENTPlayerTury" org.eventb.core.poStamp="21"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/src/machine3.bpo|org.eventb.core.poFile#machine3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="8">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Win∈BOOL" org.eventb.core.source="/src/machine3.bum|org.eventb.core.machineFile#machine3|org.eventb.core.invariant#8"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
