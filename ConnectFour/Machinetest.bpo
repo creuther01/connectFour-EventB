@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Win" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="BoardGame" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poPredicate name="BoardGamf" org.eventb.core.predicate="Win∈BOOL" org.eventb.core.source="/ConnectFour/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#EVTALLHYPBoardGamf"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{i⦂ℤ,j⦂ℤ·i∈1 ‥ 7∧j∈1 ‥ 6 ∣ i ↦ j ↦ 0}∈1 ‥ 7 × 1 ‥ 6 → 0 ‥ 2" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ConnectFour/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.event#)"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBoardGamf" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="Win'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBoardGamf" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#EVTIDENTBoardGamf" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="Reset/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#EVTALLHYPBoardGamg"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{i⦂ℤ,j⦂ℤ·i∈1 ‥ 7∧j∈1 ‥ 6 ∣ i ↦ j ↦ 0}∈1 ‥ 7 × 1 ‥ 6 → 0 ‥ 2" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poSequent#Reset\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Reset/Win/EQL" org.eventb.core.accurate="true" org.eventb.core.poDesc="Equality of common variables" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#EVTALLHYPBoardGamg"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="FALSE=Win" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.event#-|org.eventb.core.action#("/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.event#-"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poSequent#Reset\/Win\/EQL|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBoardGamg" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="BoardGame'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+        <org.eventb.core.poIdentifier name="Win'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBoardGamg" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#EVTIDENTBoardGamg" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ConnectFour/Machinetest.bpo|org.eventb.core.poFile#Machinetest|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="BoardGame∈1 ‥ 7 × 1 ‥ 6 → 0 ‥ 2" org.eventb.core.source="/ConnectFour/Machinetest.bum|org.eventb.core.machineFile#Machinetest|org.eventb.core.invariant#,"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
